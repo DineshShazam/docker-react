@@ -6,6 +6,9 @@ services:
 before_install:
   - docker build -t docker-test .
 
+script:
+  docker run docker-test
+
 deploy:
   provider: elasticbeanstalk
   region: 'us-east-1'
