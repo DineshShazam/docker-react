@@ -10,8 +10,8 @@ services:
 
 # script:
 #   docker run docker-test
-after_deploy:
-  - echo "done deploying"
+# after_deploy:
+#   - echo "done deploying"
 
 deploy:
   provider: elasticbeanstalk
