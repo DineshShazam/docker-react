@@ -10,13 +10,13 @@ services:
 
 # script:
 #   docker run docker-test
-# after_deploy:
-#   - echo "done deploying"
+after_deploy:
+  - echo "done deploying"
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: "AKIA5BZHLSWDQ4RWP26I"
-  secret_access_key: "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"
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
   region: "us-east-1"
   app: 'docker-react' 
   env: 'Dockerreact-env'
